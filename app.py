@@ -16,9 +16,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-FILE_PATH = os.path.abspath("word.xlsx")  # Converts relative path to absolute
+#FILE_PATH = os.path.abspath("word.xlsx")  # Converts relative path to absolute
 
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FILE_PATH = os.path.join(BASE_DIR,"word.xlsx")
 
 
 
